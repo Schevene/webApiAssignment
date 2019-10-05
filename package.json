@@ -1,0 +1,33 @@
+{
+  "name": "Assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js --exec babel-node -e js"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.3"
+  },
+  "dependencies": {
+    "babel-preset-stage-0": "^6.24.1",
+    "babelrc": "0.0.4",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "express-mongoose": "^0.1.0",
+    "graphql": "^14.5.8",
+    "graphql-tools": "^4.0.5",
+    "json": "^9.0.6",
+    "mongoose": "^5.7.3",
+    "yarn": "^1.19.0"
+  }
+}
