@@ -9,7 +9,7 @@ const ArtistSchema = new Schema({
   genre: {
     type: String,
     required: true,
-  },
+  }
 });
 
 export default mongoose.model('artist', ArtistSchema);
