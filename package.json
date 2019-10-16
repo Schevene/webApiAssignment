@@ -21,6 +21,7 @@
   "dependencies": {
     "babel-preset-stage-0": "^6.24.1",
     "babelrc": "0.0.4",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "express-mongoose": "^0.1.0",

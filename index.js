@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import graphqlHTTP from 'express-graphql';
 import schema from './schema';
+import cors from 'cors';
 
 //connect database
 //mongoose.Promise = global.Promise;
@@ -13,6 +14,9 @@ mongoose.connect('mongodb://localhost/', {
 //Assign port and start express
 const app = express();
 const PORT = 3000;
+
+//allow cross origin so that the react app can be used as a UI for this app
+app.use(cors());
 
 //Display UI page when it is created here
 app.get('/', (req, res) => {
