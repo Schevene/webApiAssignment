@@ -3,9 +3,12 @@ import { resolvers } from './resolvers';
 const typeDefs = `
   type Artist {
     _id: ID!
-    title: String!
-    date: Date
-    content: String!
+    name: String!
+    genre: String!
+    displayPic: { data: Buffer, contentType: String }
+    about: String!
+    twitter: String!
+    performanceDate: Date
   }
   
   scalar Date
@@ -14,12 +17,14 @@ const typeDefs = `
     allArtists: [Artist]
   }
   input ArtistInput {
-    title: String!
-    content: String!
+    name: String!
+    genre: String!
+    about: String!
   }
   input ArtistUpdateInput {
-    title: String
-    content: String
+    name: String
+    genre: String
+    about: String
   }
   type Mutation {
     createArtist(input: ArtistInput) : Artist

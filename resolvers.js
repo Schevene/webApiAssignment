@@ -1,6 +1,8 @@
   import Artist from './model/artist';
 
 export const resolvers = {
+  
+  //Read functions, do not involve mutations
   Query: {
     async getArtist(root, {_id}){
       return await Artist.findById(_id);
@@ -9,6 +11,8 @@ export const resolvers = {
       return await Artist.find();
     }
   },
+
+  //CUD functions, that involve mutations
   Mutation: {
     async createArtist(root, { input }) {
       return await Artist.create(input);
