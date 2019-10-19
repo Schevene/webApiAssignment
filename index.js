@@ -6,14 +6,14 @@ import cors from 'cors';
 
 //connect database
 //mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/', {
+mongoose.connect('mongodb://localhost/FyreFest', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }); 
 
 //Assign port and start express
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
 //allow cross origin so that the react app can be used as a UI for this app
 app.use(cors());

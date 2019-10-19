@@ -8,7 +8,7 @@ const ArtistSchema = new Schema({
   },
   genre: {
     type: String,
-    required: true
+    required: false//Change back to true later
   },
   displayPic : {
     type: { data: Buffer, contentType: String },
@@ -17,7 +17,7 @@ const ArtistSchema = new Schema({
   },
   about : {
     type: String,
-    required: true
+    required: false //change back to ture later
   },
   twitter : {
     type: String,
@@ -29,4 +29,4 @@ const ArtistSchema = new Schema({
   }
 });
 
-export default mongoose.model('artist', ArtistSchema);
+export default mongoose.model('artists', ArtistSchema);

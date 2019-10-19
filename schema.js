@@ -5,6 +5,7 @@ const typeDefs = `
     _id: ID!
     name: String!
     genre: String!
+    displayPic: String!
     about: String!
     twitter: String!
     performanceDate: Date
