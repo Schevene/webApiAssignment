@@ -20,11 +20,15 @@ const typeDefs = `
     name: String!
     genre: String!
     about: String!
+    image: String
+    date: String
   }
   input ArtistUpdateInput {
     name: String
     genre: String
     about: String
+    image: String
+    date: String
   }
   type Mutation {
     createArtist(input: ArtistInput) : Artist
