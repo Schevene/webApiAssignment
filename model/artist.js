@@ -17,12 +17,12 @@ const ArtistSchema = new Schema({
   },
   about : {
     type: String,
-    required: false //change back to ture later
+    required: false //change back to true later
   },
-  twitter : {
+  /**twitter : {
     type: String,
     required: false
-  },
+  },*/
   performanceDate : {
     type: Date,
     required: false

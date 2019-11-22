@@ -5,9 +5,8 @@ const typeDefs = `
     _id: ID!
     name: String!
     genre: String!
-    displayPic: String!
+    displayPic: String
     about: String!
-    twitter: String!
     performanceDate: Date
   }
   
@@ -19,16 +18,16 @@ const typeDefs = `
   input ArtistInput {
     name: String!
     genre: String!
+    displayPic: String
     about: String!
-    image: String
-    date: String
+    performanceDate: String
   }
   input ArtistUpdateInput {
-    name: String
-    genre: String
-    about: String
-    image: String
-    date: String
+    name: String!
+    genre: String!
+    displayPic: String
+    about: String!
+    performanceDate: String
   }
   type Mutation {
     createArtist(input: ArtistInput) : Artist

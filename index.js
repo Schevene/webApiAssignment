@@ -6,7 +6,7 @@ import cors from 'cors';
 
 //connect database
 //mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/FyreFest', {
+mongoose.connect('mongodb://localhost:4000/FyreFest', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }); 
