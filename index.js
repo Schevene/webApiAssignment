@@ -6,7 +6,7 @@ import cors from 'cors';
 
 //connect database
 //mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:4000/FyreFest', {
+mongoose.connect('mongodb+srv://Schevene:wegotthismaybe@dsa-cluster-3ehfp.azure.mongodb.net/FyreFest?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }); 

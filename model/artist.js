@@ -19,14 +19,15 @@ const ArtistSchema = new Schema({
     type: String,
     required: false //change back to true later
   },
-  /**twitter : {
+  twitter : {
     type: String,
     required: false
-  },*/
-  performanceDate : {
+  }
+  /**,
+    performancerDate : {
     type: Date,
     required: false
-  }
+  }*/
 });
 
 export default mongoose.model('artists', ArtistSchema);

@@ -16,19 +16,27 @@
     "@babel/preset-env": "^7.6.2",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "nodemon": "^1.19.3"
+    "nodemon": "^1.19.4"
   },
   "dependencies": {
     "babel-preset-stage-0": "^6.24.1",
     "babelrc": "0.0.4",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "cors-prefetch-middleware": "^1.0.0",
+    "email-validator": "^2.0.4",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "express-mongoose": "^0.1.0",
     "graphql": "^14.5.8",
     "graphql-tools": "^4.0.5",
+    "gridfs-stream": "^1.1.1",
+    "images-upload-middleware": "^1.1.1",
     "json": "^9.0.6",
-    "mongoose": "^5.7.3",
+    "mongoose": "^5.7.12",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.0.1",
+    "node-password-storage": "^1.0.4",
     "yarn": "^1.19.0"
   }
 }
