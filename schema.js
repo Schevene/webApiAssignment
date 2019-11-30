@@ -30,8 +30,9 @@ const typeDefs = `
     username: String!
     email: String!
     password: String!
-    salt: String!
-    hash: String!
+    salt: String
+    hash: String
+    role: String!
   }
 
   scalar Date
@@ -96,16 +97,12 @@ const typeDefs = `
     username: String!
     email: String!
     password: String!
-    salt: String!
-    hash: String!
     role: String!
   }
   input UserUpdateInput {
     username: String!
     email: String!
     password: String!
-    salt: String!
-    hash: String!
     role: String!
   }
 

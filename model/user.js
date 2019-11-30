@@ -22,15 +22,6 @@ email:{
 },
 password:{
     type: String,
-    required: true,
-    minlength: 9
-},
-salt:{
-    type: String,
-    required: true
-},
-hash:{
-    type: String,
     required: true
 },
 role:{
