@@ -10,6 +10,7 @@ const typeDefs = `
     twitter: String
   }
   type Stage{
+    _id: ID!
     stageName: String!
     capacity: Int!
     accessibility: String!
@@ -17,6 +18,7 @@ const typeDefs = `
     description: String
   }
   type Performance{
+    _id: ID!
     title: String!
     artist: String!
     description: String!
@@ -24,6 +26,7 @@ const typeDefs = `
     stageId: Int!
   }
   type User{
+    _id: ID!
     username: String!
     email: String!
     password: String!
