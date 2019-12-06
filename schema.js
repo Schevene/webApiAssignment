@@ -23,7 +23,7 @@ const typeDefs = `
     artist: String!
     description: String!
     date: Date!
-    stageId: Int!
+    stageId: String!
   }
   type User{
     _id: ID!
@@ -83,14 +83,14 @@ const typeDefs = `
     artist: String!
     description: String!
     date: Date!
-    stageId: Int!
+    stageId: String!
   }
-  input PerformanceUpdateInpute{
+  input PerformanceUpdateInput{
     title: String!
     artist: String!
     description: String!
     date: Date!
-    stageId: Int!
+    stageId: String!
   }
 
   input UserInput {
@@ -114,9 +114,9 @@ const typeDefs = `
     createStage(input: StageInput) : Stage
     updateStage(_id: ID!, input: StageUpdateInput): Stage
     deleteStage(_id: ID!): Stage
-    createPerformance(input: StageInput) : Stage
-    updatePerformance(_id: ID!, input: StageUpdateInput): Stage
-    deletePerformance(_id: ID!): Stage
+    createPerformance(input: PerformanceInput) : Performance
+    updatePerformance(_id: ID!, input: PerformanceUpdateInput): Performance
+    deletePerformance(_id: ID!): Performance
     createUser(input: UserInput) : User
     updateUser(_id: ID!, input: UserUpdateInput): User
     deleteUser(_id: ID!): User

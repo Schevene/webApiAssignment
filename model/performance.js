@@ -19,7 +19,7 @@ const PerformanceSchema = new Schema({
         required: true
     },
     stageId:{
-        type: Number,
+        type: String,
         required: true   
     }
 });
