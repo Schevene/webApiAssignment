@@ -25,8 +25,8 @@ export const resolvers = {
     async allPerformances() {
       return await Performance.find();
     },
-    async getUser(root, {_id}){
-      return await User.findById(_id);
+    async getUser(root, args){
+      return await User.findOne(args);
     },
     async allUsers() {
       return await User.find();

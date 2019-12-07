@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 import validator from 'email-validator';
-import pstorage from 'node-password-storage';
 
 const Schema = mongoose.Schema;
 const UserSchema = new Schema({

@@ -30,8 +30,6 @@ const typeDefs = `
     username: String!
     email: String!
     password: String!
-    salt: String
-    hash: String
     role: String!
   }
 
@@ -44,7 +42,7 @@ const typeDefs = `
     allStages: [Stage]
     getPerformance(_id: ID!): Performance
     allPerformances: [Performance]
-    getUser(_id: ID!): User
+    getUser(username: String!): User
     allUsers: [User]
   }
  
