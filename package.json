@@ -31,6 +31,7 @@
     "graphql": "^14.5.8",
     "graphql-tools": "^4.0.5",
     "gridfs-stream": "^1.1.1",
+    "heroku": "^7.35.0",
     "images-upload-middleware": "^1.1.1",
     "json": "^9.0.6",
     "mongoose": "^5.7.12",
